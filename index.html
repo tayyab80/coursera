@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     
 </head>
 
@@ -207,15 +207,14 @@
                             </span>
                     </a>
                 </ol>
-              </div class="btn-group" id="carousel-button">
-                      <button class="btn btn-danger btn-sm" id="carousel-pause">
+                  <div>
+                      <button class="btn btn-danger btn-sm" id="carouselButton">
                           <span class="fa fa-pause"></span>
                       </button>
-                      <button class="btn btn-danger btn-sm" id="carousel-play">
-                            <span class="fa fa-play"></span>
-                        </button>
+                  </div>    
+                      
 
-              </div>
+              
               </div>
           </div>
       </div>  
@@ -344,17 +343,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("#mycarousel").carousel( { interval: 1000 } );
-            $("#carousel-pause").click(function(){
-                $("#mycarousel").carousel('pause');
-            });
-            $("#carousel-play").click(function(){
-                $("#mycarousel").carousel('cycle');
-            });
-        });
-    </script>
+    <script src="js/scripts.js"></script>
     
 </body>
 
